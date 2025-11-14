@@ -144,48 +144,7 @@ const MM = ({ isOpen, setIsOpen, isEnter, setIsEnter }) => {
     >
       {loading ? (
         <>
-          <div className="flex items-center justify-between bg-[#e6e6e6] dark:bg-[#101010]">
-            <div className="flex items-center gap-2">
-              <img
-                style={{
-                  width: "1.2rem",
-                  height: "1.2rem",
-                  alignSelf: "center",
-                  margin: "0.4rem",
-                }}
-                src={meta_logo}
-              ></img>
-              <span className="text-sm text-gray-700 dark:text-gray-200" style={{fontFamily: "Geist, 'Helvetica Neue', Helvetica, Arial, sans-serif"}}>MetaMask</span>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <button
-                aria-label="Minimize"
-                className="w-8 h-6 flex items-center justify-center text-lg rounded hover:bg-gray-200 dark:hover:bg-gray-800"
-                onClick={() => {
-                  /* implement minimize behaviour if desired */
-                }}
-              >
-                –
-              </button>
-              <button
-                aria-label="Maximize"
-                className="w-8 h-6 flex items-center justify-center text-lg rounded hover:bg-gray-200 dark:hover:bg-gray-800"
-                onClick={() => {
-                  /* implement maximize behaviour if desired */
-                }}
-              >
-                ☐
-              </button>
-              <button
-                aria-label="Close"
-                className="w-8 h-6 flex items-center justify-center text-lg rounded hover:bg-red-600 hover:text-white"
-                onClick={onClose}
-              >
-                X
-              </button>
-            </div>
-          </div>
+          
           <div
             className="mmc"
             style={{
